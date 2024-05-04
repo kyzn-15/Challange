@@ -1,6 +1,2 @@
-def discount(persenan):
-    def hargaDiskon(harga):
-        ans = harga - (harga * persenan / 100)
-        return ans
-    return hargaDiskon
-
+def discount(rate):
+    return lambda harga: harga - (harga * rate / 100)
